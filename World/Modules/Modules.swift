@@ -24,9 +24,9 @@ struct Modules: View {
             SolarSystemControls()
                 .opacity(model.isShowingSolar ? 1 : 0)
 
-            // The main navigation element for the app.
+            // The main navigation element for the app.项目关注这个组件
             NavigationStack(path: $model.navigationPath) {
-                TableOfContents()
+                TableOfContents() /*-root view包含一系列可点击的项目列表，导航到不同Module，由此深入-*/
                     .navigationDestination(for: Module.self) { module in
                         ModuleDetail(module: module)
                             .navigationTitle(module.eyebrow)
@@ -36,7 +36,7 @@ struct Modules: View {
         }
         .animation(.default, value: model.isShowingSolar)
 
-        // Close any open detail view when returning to the table of contents.
+        // Close any open detail view when returning to the table of contents.关闭时同步异步管理窗口stack
         .onChange(of: model.navigationPath) { _, path in
             if path.isEmpty {
                 if model.isShowingGlobe {

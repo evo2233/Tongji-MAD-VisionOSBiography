@@ -31,7 +31,7 @@ struct TableOfContents: View {
                         TitleText(title: model.titleText)
                             .padding(.leading, 70)
                     }
-                Text("Discover a new way of looking at the world.",
+                Text("Introduce something of a man named 宋宇然.",
                      comment: "The app's subtitle, appearing immediately below the title in a smaller font, on the splash screen.")
                     .font(.title)
                     .opacity(model.isTitleFinished ? 1 : 0)
@@ -42,8 +42,8 @@ struct TableOfContents: View {
             .padding(.bottom, 24)
 
             HStack(alignment: .top, spacing: 30) {
-                ForEach(Module.allCases) {
-                    ModuleCard(module: $0)
+                ForEach(Module.allCases) { /*-这里遍历项目列表，由此深入ModuleDetail-*/
+                    ModuleCard(module: $0) /*-ModuleCard是View-*/
                 }
             }
             .padding(.bottom, 8)

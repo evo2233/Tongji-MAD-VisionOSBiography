@@ -3,6 +3,7 @@ See the LICENSE.txt file for this sample’s licensing information.
 
 Abstract:
 A detail view that presents information about different module types.
+这个文件是ViewModel
 */
 
 import SwiftUI
@@ -11,7 +12,7 @@ import SwiftUI
 struct ModuleDetail: View {
     @Environment(ViewModel.self) private var model
 
-    var module: Module
+    var module: Module /*-由此深入-*/   
 
     var body: some View {
         @Bindable var model = model
@@ -39,6 +40,9 @@ struct ModuleDetail: View {
                                 .accessibilitySortPriority(2)
                         case .solar:
                             SolarSystemToggle()
+                        /*-在Module里加完member，-*/
+                        case .biography:
+                            GlobeToggle()
                         }
                     }
                     .frame(width: textWidth, alignment: .leading)
@@ -62,7 +66,7 @@ struct ModuleDetail: View {
 
         // A settings button in an ornament,
         // visible only when `showDebugSettings` is true.
-        .settingsButton(module: module)
+        .settingsButton(module: module) /*-由此深入-*/
    }
 }
 
@@ -73,6 +77,7 @@ extension Module {
         case .globe: GlobeModule()
         case .orbit: OrbitModule()
         case .solar: SolarSystemModule()
+        case .biography: GlobeModule()
         }
     }
 }

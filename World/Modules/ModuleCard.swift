@@ -3,6 +3,7 @@ See the LICENSE.txt file for this sample’s licensing information.
 
 Abstract:
 A card that displays a navigation destination.
+这个文件是View文件，仅关注style&layout
 */
 
 import SwiftUI
@@ -37,6 +38,7 @@ struct ModuleCard: View {
         ModuleCard(module: .globe)
         ModuleCard(module: .orbit)
         ModuleCard(module: .solar)
+        /*-这里是XCode调试预览，不在这加-*/
     }
     .padding()
     .glassBackgroundEffect()

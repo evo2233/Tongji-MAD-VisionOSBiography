@@ -68,6 +68,7 @@ extension Module {
         case .globe: GlobeSettings()
         case .orbit: OrbitSettings()
         case .solar: SolarSystemSettings()
+        case .biography: GlobeSettings() /*-这里是按钮点击后跳转-*/
         }
     }
 }

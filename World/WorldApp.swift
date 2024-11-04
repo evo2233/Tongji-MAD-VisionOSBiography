@@ -19,11 +19,11 @@ struct WorldApp: App {
     @State private var solarImmersionStyle: ImmersionStyle = .full
 
     var body: some Scene {
-        // The main window that presents the app's modules.
-        WindowGroup(String(localized: "Hello World",
+        // The main window that presents the app's modules. 目前就关注窗口就行，不用管后面的volume和immersivespace
+        WindowGroup(String(localized: "Hello World", /*-localized 本地化翻译后面文字-*/
                            comment: "The name of the app. This is the typical title for many example apps in programming tutorials."),
                     id: "modules") {
-            Modules()
+            Modules() /*-这是窗口的内容组，由此深入-*/
                 .environment(model)
         }
         .windowStyle(.plain)
