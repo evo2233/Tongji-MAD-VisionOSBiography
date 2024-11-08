@@ -3,16 +3,16 @@ See the LICENSE.txt file for this sample’s licensing information.
 
 Abstract:
 A detail view that presents information about different module types.
-这个文件是ViewModel
+
 */
 
 import SwiftUI
 
-/// A detail view that presents information about different module types.
+/// A detail view that presents information about different module types.这个结构体定义子界面格式
 struct ModuleDetail: View {
     @Environment(ViewModel.self) private var model
 
-    var module: Module /*-由此深入-*/   
+    var module: Module /*-由此深入，添加member-*/
 
     var body: some View {
         @Bindable var model = model
@@ -40,9 +40,9 @@ struct ModuleDetail: View {
                                 .accessibilitySortPriority(2)
                         case .solar:
                             SolarSystemToggle()
-                        /*-在Module里加完member，-*/
+                        /*-在Module里添加member后-*/
                         case .biography:
-                            GlobeToggle()
+                            BiographyToggle() /*-这里需要为按钮添加功能-*/
                         }
                     }
                     .frame(width: textWidth, alignment: .leading)
@@ -77,7 +77,7 @@ extension Module {
         case .globe: GlobeModule()
         case .orbit: OrbitModule()
         case .solar: SolarSystemModule()
-        case .biography: GlobeModule()
+        case .biography: BiographyModule() /*-这里需要一个新的image-*/
         }
     }
 }

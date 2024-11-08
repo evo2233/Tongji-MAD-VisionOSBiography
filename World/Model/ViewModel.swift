@@ -41,4 +41,7 @@ class ViewModel {
          0,
          Float(solarSunDistance * cos(solarEarth.sunAngle.radians))]
     }
+    // MARK: - Biography
+    var isShowingBiography: Bool = false
+    
 }
