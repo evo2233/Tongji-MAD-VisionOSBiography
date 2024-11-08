@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		849D44F12CDDEB0500290FDB /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849D44F02CDDEAF500290FDB /* VideoPlayer.swift */; };
 		849D44F32CDDEBA500290FDB /* lie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 849D44F22CDDEBA500290FDB /* lie.mp4 */; };
+		84AC60EE2CDE052600904004 /* BiographySettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AC60ED2CDE050100904004 /* BiographySettings.swift */; };
 		84B5BBC02CDA0A8400B24721 /* BiographyToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B5BBBF2CDA0A7500B24721 /* BiographyToggle.swift */; };
 		84B5BBC42CDA0AB400B24721 /* BiographyModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B5BBC32CDA0AAD00B24721 /* BiographyModule.swift */; };
 		B0B8C3EC2BDC3D0900704A2C /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B0B8C3EB2BDC3D0900704A2C /* Localizable.xcstrings */; };
@@ -62,6 +63,7 @@
 		6FD03BD460C2666C0917AC9F /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 		849D44F02CDDEAF500290FDB /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
 		849D44F22CDDEBA500290FDB /* lie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = lie.mp4; sourceTree = "<group>"; };
+		84AC60ED2CDE050100904004 /* BiographySettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiographySettings.swift; sourceTree = "<group>"; };
 		84B5BBBF2CDA0A7500B24721 /* BiographyToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiographyToggle.swift; sourceTree = "<group>"; };
 		84B5BBC32CDA0AAD00B24721 /* BiographyModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiographyModule.swift; sourceTree = "<group>"; };
 		B0B8C3EB2BDC3D0900704A2C /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
@@ -313,6 +315,7 @@
 		C2F2CA322A391CDC00E1C2A2 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				84AC60ED2CDE050100904004 /* BiographySettings.swift */,
 				C2A0F2AF29D115150009D46C /* SettingsButton.swift */,
 				C200227E29883B3900732240 /* GlobeSettings.swift */,
 				C253D5762947E44200B292CA /* OrbitSettings.swift */,
@@ -452,6 +455,7 @@
 				C2B0AEEF2994B39300021509 /* TraceSystem.swift in Sources */,
 				84B5BBC42CDA0AB400B24721 /* BiographyModule.swift in Sources */,
 				C2E652D8291B09AC007934BC /* SolarSystem.swift in Sources */,
+				84AC60EE2CDE052600904004 /* BiographySettings.swift in Sources */,
 				C258918F2975EB7E0071BD5F /* SliderGridRow.swift in Sources */,
 				C2CD36432A3A7682003811D3 /* ModuleCard.swift in Sources */,
 				C20197A429E3D9C900C6A20F /* SatelliteEntity.swift in Sources */,

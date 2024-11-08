@@ -16,8 +16,8 @@ struct BiographyToggle: View {
     var body: some View {
         @Bindable var model = model
         
-        Toggle(Module.globe.callToAction, isOn: $model.isShowingBiography) /*-这里添加VM-*/
-            .onChange(of: model.isShowingBiography) { _, isShowing in
+        Toggle(Module.biography.callToAction, isOn: $model.isShowingVideo)
+            .onChange(of: model.isShowingVideo) { _, isShowing in
                 if isShowing {
                     openWindow(id: Module.biography.name)
                 } else {

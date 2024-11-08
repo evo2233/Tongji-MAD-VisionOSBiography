@@ -68,7 +68,7 @@ extension Module {
         case .globe: GlobeSettings()
         case .orbit: OrbitSettings()
         case .solar: SolarSystemSettings()
-        case .biography: GlobeSettings() /*-这里需要一个新的子窗口样式-*/
+        case .biography: BiographySettings()
         }
     }
 }

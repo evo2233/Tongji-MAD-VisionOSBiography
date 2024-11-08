@@ -10,7 +10,7 @@ import SwiftUI
 
 struct BiographyModule: View {
     var body: some View {
-        Image("Biography") // "00"是在Assets.xcassets中添加的图片的名称（不包括扩展名）
+        Image("Biography") // "Biography"是在Assets.xcassets中添加的图片的名称（不包括扩展名）
             .resizable()
             .scaledToFit()
     }

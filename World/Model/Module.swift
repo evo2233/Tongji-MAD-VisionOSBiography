@@ -12,18 +12,18 @@ import Foundation
 enum Module: String, Identifiable, CaseIterable, Equatable {
     case globe, orbit, solar, biography /*-add biography case-*/
     var id: Self { self }
-    var name: String { rawValue.capitalized }
+    var name: String { rawValue.capitalized } /*-这里name属性就是直接把case的首字母大写-*/
 
     var eyebrow: String {
         switch self {
         case .globe:
-            String(localized: "My Home Planet", comment: "The subtitle of the Planet Earth module.")
+            String(localized: "A Day in the Life", comment: "The subtitle of the Planet Earth module.")
         case .orbit:
             String(localized: "Our Nearby Neighbors", comment: "The subtitle of the Objects in Orbit module.")
         case .solar:
             String(localized: "Soaring Through Space", comment: "The subtitle of the Solar System module.")
         case .biography:
-            String(localized: "Information about Me Personally", comment: "The subtitle of Biography module")
+            String(localized: "我的个人信息", comment: "The subtitle of Biography module")
         }
     }
 
@@ -36,7 +36,7 @@ enum Module: String, Identifiable, CaseIterable, Equatable {
         case .solar:
             String(localized: "The Solar System", comment: "The title of a module in the app.")
         case .biography:
-            String(localized: "About Me", comment: "The title is under the subtitle")
+            String(localized: "我", comment: "The title is under the subtitle")
         }
     }
 
@@ -71,7 +71,7 @@ enum Module: String, Identifiable, CaseIterable, Equatable {
         case .globe: String(localized: "View Globe", comment: "An action the viewer can take in the Planet Earth module.")
         case .orbit: String(localized: "View Orbits", comment: "An action the viewer can take in the Objects in Orbit module.")
         case .solar: String(localized: "View Outer Space", comment: "An action the viewer can take in the Solar System module.")
-        case .biography:String(localized: "理想的空间")
+        case .biography:String(localized: "理想的空间", comment: "An action the viewer can play the video.")
         }
     }
 

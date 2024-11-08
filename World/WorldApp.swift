@@ -23,7 +23,7 @@ struct WorldApp: App {
         WindowGroup(String(localized: "Hello World", /*-localized 本地化翻译后面文字-*/
                            comment: "The name of the app. This is the typical title for many example apps in programming tutorials."),
                     id: "modules") {
-            Modules() /*-这是窗口的内容组，由此深入-*/
+            Modules() /*-这是主窗口的内容组，由此深入-*/
                 .environment(model)
         }
         .windowStyle(.plain)
@@ -36,6 +36,11 @@ struct WorldApp: App {
         .windowStyle(.volumetric)
         .defaultSize(width: 0.6, height: 0.6, depth: 0.6, in: .meters)
 
+        /*-Scene：每一个WindowGroup是一个独立的窗口组，视频播放界面要单独新开一个窗口-*/
+        WindowGroup(id: Module.biography.name){
+            Biography()
+        }
+        
         // An immersive space that places the Earth with some of its satellites
         // in your surroundings.
         ImmersiveSpace(id: Module.orbit.name) {
