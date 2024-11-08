@@ -49,7 +49,7 @@ enum Module: String, Identifiable, CaseIterable, Equatable {
         case .solar:
             String(localized: "Take a trip to the solar system and watch how the Earth, Moon, and its satellites are in constant motion rotating around the Sun.", comment: "Detail text explaining the Solar System module.")
         case .biography:
-            String(localized: "...")
+            String(localized: "来看看我的简介吧")
         }
     }
 
@@ -62,7 +62,7 @@ enum Module: String, Identifiable, CaseIterable, Equatable {
         case .solar:
             String(localized: "Every 365¼ days, Earth and its satellites completely orbit the Sun — the star that anchors our solar system. It’s a journey of about 940 million kilometers a year!\n\nOn its journey, the Earth moves counter-clockwise in a slightly elliptical orbit. It travels a path called the ecliptic plane — an important part of how we navigate through our solar system.\n\nWant to explore Earth’s orbit in detail? Take a trip to the solar system and watch how Earth and its satellites move around the Sun.", comment: "Educational text displayed in the Solar System module.")
         case .biography:
-            String(localized: "...")
+            String(localized: "宋宇然，2004年出生，吉林通化人。爱好是看有趣的故事、美术和旅行。对探险充满兴趣，喜欢尝试新鲜事物。梦想是能参与到科技的进步之中，让技术解放人类，使人的价值在于其所积极创造的一切，而非重复的无聊劳作。比较怕生，不过对有点熟络的人很健谈。掌握了一点编程技术，也比较擅长乒乓球、羽毛球等运动。偏向于在僻静、整洁的空间生活，下面就是我理想的生存空间。")
         }
     }
 
@@ -71,7 +71,7 @@ enum Module: String, Identifiable, CaseIterable, Equatable {
         case .globe: String(localized: "View Globe", comment: "An action the viewer can take in the Planet Earth module.")
         case .orbit: String(localized: "View Orbits", comment: "An action the viewer can take in the Objects in Orbit module.")
         case .solar: String(localized: "View Outer Space", comment: "An action the viewer can take in the Solar System module.")
-        case .biography:String(localized: "...")
+        case .biography:String(localized: "理想的空间")
         }
     }
 
@@ -79,7 +79,6 @@ enum Module: String, Identifiable, CaseIterable, Equatable {
         String(localized: "The Earth orbits the Sun on an invisible path called the ecliptic plane.", comment: "An educational fact displayed in the Solar System module."),
         String(localized: "All planets in the solar system orbit within 3°–7° of this plane.", comment: "An educational fact displayed in the Solar System module."),
         String(localized: "As the Earth orbits the Sun, its axial tilt exposes one hemisphere to more sunlight for half of the year.", comment: "An educational fact displayed in the Solar System module."),
-        String(localized: "Earth’s axial tilt is why different hemispheres experience different seasons.", comment: "An educational fact displayed in the Solar System module."),
-        String(localized: "...")
+        String(localized: "Earth’s axial tilt is why different hemispheres experience different seasons.", comment: "An educational fact displayed in the Solar System module.")
     ]
 }

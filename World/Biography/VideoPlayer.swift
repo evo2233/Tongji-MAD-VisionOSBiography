@@ -2,19 +2,16 @@
 //  VideoPlayer.swift
 //  World
 //
-//  Created by admin on 2024/11/5.
+//  Created by admin on 2024/11/8.
 //  Copyright © 2024 Apple. All rights reserved.
 //
 
 import SwiftUI
+import AVKit
 
 struct VideoPlayer: View {
-    @Environment(ViewModel.self) private var model
-    
     var body: some View {
-        ZStack(alignment: Alignment(horizontal: .controlPanelGuide, vertical: .bottom)) {
-            // 这里放Video的组件，以及播放和onDisappear
-        }
+        VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: "lie", withExtension: "mp4")!))
+            .frame(width: 1200, height: 700)
     }
 }
-

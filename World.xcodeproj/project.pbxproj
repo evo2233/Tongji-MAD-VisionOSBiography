@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		849D44F12CDDEB0500290FDB /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849D44F02CDDEAF500290FDB /* VideoPlayer.swift */; };
+		849D44F32CDDEBA500290FDB /* lie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 849D44F22CDDEBA500290FDB /* lie.mp4 */; };
 		84B5BBC02CDA0A8400B24721 /* BiographyToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B5BBBF2CDA0A7500B24721 /* BiographyToggle.swift */; };
-		84B5BBC22CDA0A9700B24721 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B5BBC12CDA0A9100B24721 /* VideoPlayer.swift */; };
 		84B5BBC42CDA0AB400B24721 /* BiographyModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B5BBC32CDA0AAD00B24721 /* BiographyModule.swift */; };
 		B0B8C3EC2BDC3D0900704A2C /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B0B8C3EB2BDC3D0900704A2C /* Localizable.xcstrings */; };
 		B0C7C5462BF5DA0900ECE452 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B0C7C5452BF5DA0900ECE452 /* InfoPlist.xcstrings */; };
@@ -59,8 +60,9 @@
 
 /* Begin PBXFileReference section */
 		6FD03BD460C2666C0917AC9F /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		849D44F02CDDEAF500290FDB /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
+		849D44F22CDDEBA500290FDB /* lie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = lie.mp4; sourceTree = "<group>"; };
 		84B5BBBF2CDA0A7500B24721 /* BiographyToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiographyToggle.swift; sourceTree = "<group>"; };
-		84B5BBC12CDA0A9100B24721 /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
 		84B5BBC32CDA0AAD00B24721 /* BiographyModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiographyModule.swift; sourceTree = "<group>"; };
 		B0B8C3EB2BDC3D0900704A2C /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		B0C7C5452BF5DA0900ECE452 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
@@ -137,7 +139,8 @@
 		84B5BBBE2CDA0A5700B24721 /* Biography */ = {
 			isa = PBXGroup;
 			children = (
-				84B5BBC12CDA0A9100B24721 /* VideoPlayer.swift */,
+				849D44F02CDDEAF500290FDB /* VideoPlayer.swift */,
+				849D44F22CDDEBA500290FDB /* lie.mp4 */,
 				84B5BBC32CDA0AAD00B24721 /* BiographyModule.swift */,
 				84B5BBBF2CDA0A7500B24721 /* BiographyToggle.swift */,
 			);
@@ -396,6 +399,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849D44F32CDDEBA500290FDB /* lie.mp4 in Resources */,
 				C20A898F2A37D93C004E8608 /* Sunlight.skybox in Resources */,
 				B0C7C5462BF5DA0900ECE452 /* InfoPlist.xcstrings in Resources */,
 				C22D1AF928EB403600CE0F8F /* Preview Assets.xcassets in Resources */,
@@ -411,7 +415,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84B5BBC22CDA0A9700B24721 /* VideoPlayer.swift in Sources */,
 				C2D21553294D210B00634A99 /* Globe.swift in Sources */,
 				C25EFB7029DE7D1500D3CBB6 /* Entity+Trace.swift in Sources */,
 				C25AD07D29EC6C1E0012834D /* EarthEntity.swift in Sources */,
@@ -426,6 +429,7 @@
 				C2F2CA362A391D6B00E1C2A2 /* SatelliteSettings.swift in Sources */,
 				C2C1C8DB29ECA8CC00DA5D97 /* EarthEntity+Configuration.swift in Sources */,
 				C2A8235E2A858A1C006F6AFF /* SolarSystemToggle.swift in Sources */,
+				849D44F12CDDEB0500290FDB /* VideoPlayer.swift in Sources */,
 				C2589191297625C90071BD5F /* PlacementGesturesModifier.swift in Sources */,
 				C2A823622A8591FC006F6AFF /* GlobeToggle.swift in Sources */,
 				C25774DE29E2401F00A75567 /* SolarSystemModule.swift in Sources */,
